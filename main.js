@@ -128,7 +128,7 @@ var productDetail = document.getElementById("product-detail-plain").innerHTML;
  * @private
  */
 function _share(channel, ast){
-    amigo.consumeToken(ast, {shareChannel: 'touch'}, function(err,token){
+    amigo.consumeToken(ast, {shareChannel: channel}, function(err,token){
         if (err) {
             console.warn(err);
             return false;
