@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Extreme Walrus Juice | Galaxy Shop</title>
+    <link rel="icon" href="favicon.ico">
+
+    <script type="text/javascript">
+        var amigo = undefined;
+
+        window.amigoAsyncInit = function () {
+
+            Amigo.addEventListener(Amigo.Events.Ready, function(){
+                amigo = Amigo;
+            });
+
+            Amigo.init({
+                debug: true,
+                autoSend: false,
+                apiKey: '61b43428511785428062a69ba45d606adc63ef015a6b8d9ad95999a6eca2c15f'
+            });
+
+
+        };
+
+        (function (d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "//d22stxronnwc65.cloudfront.net/sdk-latest.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'amigo-jssdk'));
+
+//        window.fbAsyncInit = function() {
+//            FB.init({
+//                appId      : '164950490318612',
+//                xfbml      : true,
+//                version    : 'v2.4'
+//            });
+//        };
+//
+//        (function(d, s, id){
+//            var js, fjs = d.getElementsByTagName(s)[0];
+//            if (d.getElementById(id)) {return;}
+//            js = d.createElement(s); js.id = id;
+//            js.src = "//connect.facebook.net/en_US/sdk.js";
+//            fjs.parentNode.insertBefore(js, fjs);
+//        }(document, 'script', 'facebook-jssdk'));
+
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body data-touchpoint="http://magellanic-cloud.ru/da/touchpoint.html">
+<div>
+    <form id="login-form">
+        <input name="login" type="text" placeholder="login">
+        <input name="pass" type="password" placeholder="password">
+        <button type="button" onclick="signIn()">Sign in</button>
+        <p class="hint"> (?) <span id="hint-detail">Lila, Bender or Fry, any password</span></p>
+    </form>
+    <div style="display: none;" id="user-info-div">
+        <img id="userPic" src="users/no-pic.gif" title="user picture">
+        Hello, <span id="userName">user</span>! <a href="#" onclick="signOut()">Sign out</a>
+    </div>
+</div>
+
+<div class="main">
+    <div style="display:table">
+        <div style="display: table-row">
+            <div style="display: table-cell">
+                <img class="product-img" src="ewj.gif" title="Extreme Walrus Juice">
+            </div>
+            <div style="display: table-cell; vertical-align: top;">
+                <h2>Extreme Walrus Juice</h2>
+                <h4>Price: $20</h4>
+                Try our new unique super juice from walrus. It vitalises your body with a number of important vitamins E, D
+                and Z and makes you feel like you can <b>ride a walrus!</b>
+                <div id="product-detail-plain" style="display:none;">Extreme Walrus Juice @ Galaxy Shop (Price: $20). 
+Try our new unique super juice from walrus. It vitalises your body with a number of important vitamins E, D
+and Z and makes you feel like you can ride a walrus! </div>
+
+                <div class="share">
+                    <span class="action-text">Share with friends now and receive a 10% off your next order!</span>
+                    <a class="share-btn" href="#" data-channel="facebook" onclick="share(this)">
+                        <img src="icons/facebook.png" title="share on Facebook">
+                    </a>
+                    <a class="share-btn" href="#" data-channel="vk" onclick="share(this)">
+                        <img src="icons/vk.png" title="share on VK">
+                    </a>
+                    <a class="share-btn" href="#" data-channel="email" onclick="share(this)">
+                        <img src="icons/email.png" title="tell a friend">
+                    </a>
+                    <a class="share-btn" href="#" data-channel="g-plus" onclick="share(this)">
+                        <img src="icons/google.png" title="share on Google+">
+                    </a>
+                    <a class="share-btn" href="#" data-channel="touch" onclick="share(this)">
+                        <img src="icons/touch.png" title="Go to touch point">
+                    </a>
+                    <br>
+                    <!--<em><a href="#" data-channel="touch" onclick="share(this)">Go to touch point</a></em>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr style="margin-top: 20px;">
+<p>&copy; Copyright 2015 "Galaxy Shop" Ltd
+</p>
+
+
+<!--http://wegraphics.net/downloads/30-free-flat-style-social-media-icons/-->
+
+<script src="cookies.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

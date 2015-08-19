@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Extreme Walrus Juice | Galaxy Shop</title>
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:url"           content="http://magellanic-cloud.ru/da/touchpoint.html" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="Extreme Walrus Juice | Galaxy Shop" />
+    <meta property="og:description"   content="Price: $20.
+                Try our new unique super juice from walrus. It vitalises your body with a number of important vitamins E, D
+                and Z and makes you feel like you can ride a walrus!" />
+    <meta property="og:image"         content="http://magellanic-cloud.ru/da/preview.jpg" />
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <script type="text/javascript">
+        var amigo = undefined;
+        var ast = undefined;
+
+        window.amigoAsyncInit = function () {
+            Amigo.addEventListener(Amigo.Events.TouchRegistered, function(meta){
+                console.log(meta);
+                if(meta && meta.name && meta.userPic){
+                    document.getElementById("friend-welcome-div").style.display = "block";
+                    document.getElementById("friend-name").innerHTML = meta.name;
+                    document.getElementById("friend-picture").src = meta.userPic;
+
+                }
+            });
+            Amigo.addEventListener(Amigo.Events.Ready, function(){
+                //amigo = Amigo;
+                Amigo.registerTouch('ad_touchpoint');
+
+            });
+
+            Amigo.init({
+                debug: true,
+                autoSend: false,
+                apiKey: '61b43428511785428062a69ba45d606adc63ef015a6b8d9ad95999a6eca2c15f'
+            });
+
+        };
+
+        (function (d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "//d22stxronnwc65.cloudfront.net/sdk-latest.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'amigo-jssdk'));
+
+    </script>
+</head>
+<!--<body>-->
+<!--Hello! Welcome to this webpage.-->
+<!--<div id="personal-welcome" style="display: none;">-->
+    <!--hi welcome from your friend <span id="friend-name"></span>.-->
+<!--</div>-->
+
+<!--</body>-->
+<body >
+<div>
+    <div style="display: none;" id="friend-welcome-div">
+        <img id="friend-picture" src="users/no-pic.gif" title="friend picture">
+        Hello, your friend <b><span id="friend-name">friend</span></b> has recommended us, and it's great to see you on our website! <a href="#">Redeem $10 voucher.</a>
+    </div>
+</div>
+
+<div class="main">
+    <div style="display:table">
+        <div style="display: table-row">
+            <div style="display: table-cell">
+                <img class="product-img" src="ewj.gif" title="Extreme Walrus Juice">
+            </div>
+            <div style="display: table-cell; vertical-align: top;">
+                <h2>Extreme Walrus Juice</h2>
+                <h4>Price: $20</h4>
+                Try our new unique super juice from walrus. It vitalises your body with a number of important vitamins E, D
+                and Z and makes you feel like you can <b>ride a walrus!</b>
+
+                <div class="share">
+                    <span class="action-text">Share with friends now and receive a 10% off your next order!</span>
+                    <a class="share-btn" href="#" data-channel="facebook" onclick="share(this)">
+                        <img src="icons/facebook.png" title="share on Facebook">
+                    </a>
+                    <a class="share-btn" href="#" data-channel="vk" onclick="share(this)">
+                        <img src="icons/vk.png" title="share on VK">
+                    </a>
+                    <a class="share-btn" href="#" data-channel="email" onclick="share(this)">
+                        <img src="icons/email.png" title="tell a friend">
+                    </a>
+                    <a class="share-btn" href="#" data-channel="g-plus" onclick="share(this)">
+                        <img src="icons/google.png" title="share on Google+">
+                    </a>
+                    <a class="share-btn" href="#" data-channel="touch" onclick="share(this)">
+                        <img src="icons/touch.png" title="Go to touch point">
+                    </a>
+                    <br>
+                    <!--<em><a href="#" data-channel="touch" onclick="share(this)">Go to touch point</a></em>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr style="margin-top: 20px;">
+<p>&copy; Copyright 2015 "Galaxy Shop" Ltd
+</p>
+
+</body>
+</html>
